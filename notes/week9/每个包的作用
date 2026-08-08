@@ -1,0 +1,26 @@
+入口与启动：adf.core，adf.core.launcher，adf.core.launcher.option，
+adf.core.launcher.connect，adf.core.launcher.annotation，adf.core.launcher.dummy，
+adf.core.launcher.dummy.tactics，adf.core.launcher.dummy.tactics.centerMain 入口、CLI 参数解析、
+AgentLauncher、TCP 连接器、Dummy Tactics 实现
+
+智能体运行时：adf.core.agent，adf.core.agent.platoon，adf.core.agent.office，
+adf.core.agent.info，adf.core.agent.module，adf.core.agent.config，adf.core.agent.develop，
+adf.core.agent.precomputeAgent 基类、Platoon/Office 智能体、AgentInfo/WorldInfo/ScenarioInfo、
+ModuleManager、ModuleConfig
+
+动作：adf.core.agent.action，action.ambulance，action.common，action.fire，
+action.police动作抽象及移动、休息、救援、搬运、灭火、清理等具体动作
+
+通信：adf.core.agent.communication，.standard，.standard.bundle，.standard.bundle.centralized，
+.standard.bundle.information，.standard.bundle.topdown消息管理、标准通信模块、中心指令、信息广播
+和上下行消息 bundle
+
+组件接口：adf.core.component，component.tactics，component.module，component.module.algorithm，
+component.module.complex，component.extaction，component.centralized，component.communication，
+component.communication.utilLoader、Tactics
+
+调试：adf.core.debugLogger、WorldViewer、WorldViewLauncher。
+
+默认实现：adf.impl，adf.impl.tactics，adf.impl.tactics.utils，adf.impl.module，
+adf.impl.module.algorithm，adf.impl.module.comm，adf.impl.module.complex，adf.impl.centralized，
+adf.impl.extactionDefaultLoader、默认 Tactics、Dijkstra/A*/KMeans

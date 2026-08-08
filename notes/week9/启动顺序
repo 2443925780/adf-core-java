@@ -1,0 +1,10 @@
+1.trap 捕获 Ctrl-C，中断时执行 kill.sh
+2.启动source functions.sh
+3.将当前接收到的所有参数交给processArgs 函数
+4.删除旧日志，执行 kill.sh
+5.startKernel --nomenu：启动 kernel.StartKernel
+6.依次启动startSims
+startViewer
+startViewerEventLogger
+7.输出 Start your agents，等待 Kernel has shut down
+8.最后清理所有后台进程
